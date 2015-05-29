@@ -1,0 +1,23 @@
+[
+	{ "keys": ["alt+d"], "command": "alignment" },
+	{ "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"},
+	{ "keys": [";",";"], "command": "exit_insert_mode",
+	        "context":
+	        [
+	            { "key": "setting.command_mode", "operand": false },
+	            { "key": "setting.is_widget", "operand": false }
+	        ]
+	},
+	{ "keys": [";"], "command": "exit_visual_mode", "args": {"toggle": true},
+		"context":
+		[
+			{"key": "setting.command_mode"},
+			{"key": "selection_empty", "operator": "equal", "operand": false, "match_all": false}
+		]
+	},
+	{ 
+        "keys": ["f","f", "<character>"], 
+        "command": "easy_motion",
+        "args": {"select_text": false} 
+    }
+]
