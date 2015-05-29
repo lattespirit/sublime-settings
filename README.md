@@ -2,7 +2,9 @@
 
 ###Related Plugins:
 
-*Alignment
-*AdvancedNewFile
-*Vintage(Default included)
-*Easymotion
+* Alignment
+* AdvancedNewFile
+* Vintage(Default included)
+* Easymotion
+
+You can install all these plugins through **Package Control**
