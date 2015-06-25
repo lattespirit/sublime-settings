@@ -1,6 +1,6 @@
 [
 	{ "keys": ["alt+d"], "command": "alignment" },
-	{ "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"},
+	{ "keys": ["n","n"], "command": "advanced_new_file_new"},
 	{ "keys": [";",";"], "command": "exit_insert_mode",
 	        "context":
 	        [
@@ -8,7 +8,8 @@
 	            { "key": "setting.is_widget", "operand": false }
 	        ]
 	},
-	{ "keys": [";"], "command": "exit_visual_mode", "args": {"toggle": true},
+	{ 
+		"keys": [";"], "command": "exit_visual_mode", "args": {"toggle": true},
 		"context":
 		[
 			{"key": "setting.command_mode"},
@@ -19,5 +20,26 @@
         "keys": ["f","f", "<character>"], 
         "command": "easy_motion",
         "args": {"select_text": false} 
-    }
+        },
+	{ 
+		"keys": ["alt+up"], "command": "select_lines", "args": {"forward": false} 
+	},
+	{ 
+		"keys": ["alt+down"], "command": "select_lines", "args": {"forward": true} 
+	},
+	{ 
+		"keys": ["ctrl+y"], "command": "redo_or_repeat" 
+	},
+	{ 
+		"keys": ["alt+k"], "command": "set_motion", "args": {
+		"motion": "move",
+		"motion_args": {"by": "pages", "forward": false, "extend": true }},
+		"context": [{"key": "setting.command_mode"}, {"key": "setting.vintage_ctrl_keys"}]
+	},
+	{ 
+                "keys": ["alt+j"], "command": "set_motion", "args": {
+		"motion": "move",
+		"motion_args": {"by": "pages", "forward": true, "extend": true }},
+		"context": [{"key": "setting.command_mode"}, {"key": "setting.vintage_ctrl_keys"}]
+	}
 ]
