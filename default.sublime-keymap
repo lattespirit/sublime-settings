@@ -17,9 +17,9 @@
 		]
 	},
 	{ 
-        "keys": ["f","f", "<character>"], 
-        "command": "easy_motion",
-        "args": {"select_text": false} 
+        	"keys": ["f","f", "<character>"], 
+        	"command": "easy_motion",
+        	"args": {"select_text": false} 
         },
 	{ 
 		"keys": ["alt+up"], "command": "select_lines", "args": {"forward": false} 
@@ -29,6 +29,9 @@
 	},
 	{ 
 		"keys": ["ctrl+y"], "command": "redo_or_repeat" 
+	},
+	{ 
+		"keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find"} 
 	},
 	{ 
 		"keys": ["alt+k"], "command": "set_motion", "args": {
