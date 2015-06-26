@@ -44,5 +44,15 @@
 		"motion": "move",
 		"motion_args": {"by": "pages", "forward": true, "extend": true }},
 		"context": [{"key": "setting.command_mode"}, {"key": "setting.vintage_ctrl_keys"}]
+	},
+	{ 
+		"keys": ["ctrl+w"], "command": "close" 
+	},
+	{ 
+		"keys": ["ctrl+d"], "command": "find_under_expand" 
+	},
+	{ 
+		"keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}
 	}
+
 ]
