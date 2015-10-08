@@ -1,14 +1,14 @@
 [
-	{ "keys": ["alt+d"], "command": "alignment" },
-	{ "keys": ["n","n"], "command": "advanced_new_file_new"},
-	{ "keys": [";",";"], "command": "exit_insert_mode",
+	{ "keys": ["ctrl+alt+d"], "command": "alignment" },
+	{ "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"},
+	{ "keys": ["j","j"], "command": "exit_insert_mode",
 	        "context":
 	        [
 	            { "key": "setting.command_mode", "operand": false },
 	            { "key": "setting.is_widget", "operand": false }
 	        ]
 	},
-	{ 
+	{
 		"keys": [";"], "command": "exit_visual_mode", "args": {"toggle": true},
 		"context":
 		[
@@ -16,22 +16,22 @@
 			{"key": "selection_empty", "operator": "equal", "operand": false, "match_all": false}
 		]
 	},
+	// { "keys": ["n","n"], "command": "advanced_new_file_new"},
+	// { 
+ //        "keys": ["f","f", "<character>"], 
+ //        "command": "easy_motion",
+ //        "args": {"select_text": false} 
+ //    },
+    // { 
+    //     "keys": ["f","f", "enter"], 
+    //     "command": "easy_motion",
+    //     "args": {"select_text": false, "character": "enter"}
+    // },
 	{ 
-        	"keys": ["f","f", "<character>"], 
-        	"command": "easy_motion",
-        	"args": {"select_text": false} 
-        },
-	{ 
-		"keys": ["alt+up"], "command": "select_lines", "args": {"forward": false} 
+		"keys": ["alt+shift+k"], "command": "select_lines", "args": {"forward": false} 
 	},
 	{ 
-		"keys": ["alt+down"], "command": "select_lines", "args": {"forward": true} 
-	},
-	{ 
-		"keys": ["ctrl+y"], "command": "redo_or_repeat" 
-	},
-	{ 
-		"keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find"} 
+		"keys": ["alt+shift+j"], "command": "select_lines", "args": {"forward": true} 
 	},
 	{ 
 		"keys": ["alt+k"], "command": "set_motion", "args": {
@@ -40,19 +40,39 @@
 		"context": [{"key": "setting.command_mode"}, {"key": "setting.vintage_ctrl_keys"}]
 	},
 	{ 
-                "keys": ["alt+j"], "command": "set_motion", "args": {
+		"keys": ["alt+j"], "command": "set_motion", "args": {
 		"motion": "move",
 		"motion_args": {"by": "pages", "forward": true, "extend": true }},
 		"context": [{"key": "setting.command_mode"}, {"key": "setting.vintage_ctrl_keys"}]
 	},
 	{ 
-		"keys": ["ctrl+w"], "command": "close" 
+		"keys": ["ctrl+y"], "command": "redo_or_repeat" 
+	},
+	{ 
+		"keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find"} 
+	},
+	{ 
+		"keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}
+	},
+	{
+	 	"keys": ["ctrl+w"], "command": "close"
 	},
 	{ 
 		"keys": ["ctrl+d"], "command": "find_under_expand" 
 	},
+	{
+	  "keys": ["alt+u"], "command": "svn_update"
+	},
+	{
+	  "keys": ["alt+c"], "command": "svn_commit"
+	},
+	{
+	  "keys": ["alt+l"], "command": "svn_log"
+	},
+	{
+	  "keys": ["alt+d"], "command": "svn_diff"
+	},
 	{ 
-		"keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}
+	  "keys": ["ctrl+b"], "command": "build" 
 	}
-
 ]
