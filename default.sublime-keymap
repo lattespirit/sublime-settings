@@ -74,5 +74,12 @@
 	},
 	{ 
 	  "keys": ["ctrl+b"], "command": "build" 
+	},
+	{ 
+	  "keys": ["alt+e"], "command": "scroll_lines", "args": {"amount": 1.0 } 
+	},
+	{ 
+	  "keys": ["alt+y"], "command": "scroll_lines", "args": {"amount": -1.0 }
 	}
+
 ]
