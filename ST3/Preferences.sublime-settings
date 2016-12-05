@@ -9,5 +9,6 @@
   "vintage_ctrl_keys": true,
   "vintage_start_in_command_mode": true,
   "word_wrap": true,
-  "show_encoding": true
+  "show_encoding": true,
+  "always_show_minimap_viewport": false,
 }
