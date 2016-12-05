@@ -3,12 +3,8 @@
     "leading_separator": true
   },
   "color_scheme": "Packages/Boxy Theme/schemes/Boxy Ocean.tmTheme",
-  "command": "insert_php_constructor_property",
   "font_size": 13,
   "ignored_packages": [],
-  "keys": [
-    "f8"
-  ],
   "theme": "Boxy Ocean.sublime-theme",
   "vintage_ctrl_keys": true,
   "vintage_start_in_command_mode": true,
