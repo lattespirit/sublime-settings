@@ -93,7 +93,7 @@
 	{
 		"keys": ["ctrl+alt+p"], "command": "prompt_select_workspace"
 	},
-		{ 
+	{ 
 		"keys": [":", "v", "s", "p"], "command": "create_pane", "args": {"direction": "right", "give_focus": true} 
 	},
 	{ 
@@ -101,5 +101,51 @@
 	},
 	{ 
 		"keys": [":", "b", "d"], "command": "destroy_pane", "args": {"direction": "self"} 
+	},
+	{
+		"keys": ["f6"], "command": "expand_fqcn" 
+	},
+	{
+		"keys": ["shift+f6"], "command": "expand_fqcn", "args": {"leading_separator": true} 
+	},
+	{
+		"keys": ["f5"], "command": "find_use" 
+	},
+	{
+		"keys": ["f4"], "command": "import_namespace" 
+	},
+	{
+		"keys": ["f3"], "command": "implement" 
+	},
+	{
+		"keys": ["shift+f12"], "command": "goto_definition_scope" 
+	},
+	{
+		"keys": ["f8"], "command": "insert_php_constructor_property" 
+	},
+	{
+		"keys": [":", "q"], "command": "close" 
+	},
+	{
+		"keys": [",", "q"], "command": "close" 
+	},
+	{
+		"keys": [",", "w"], "command": "save" 
+	},
+	{
+		"keys": [":", "w"], "command": "save" 
+	},
+	{
+		"keys": ["ctrl+h"], "command": "recent_active_files"
+	},
+	{
+	 	"keys": [",", "m"], "command": "toggle_menu"
+	},
+	{
+	 	"keys": [",", "t"], "command": "toggle_tabs"
+	},
+	{
+	 	"keys": [",", "s"], "command": "toggle_status_bar"
 	}
+
 ]
