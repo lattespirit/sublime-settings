@@ -149,6 +149,9 @@
 	 	"keys": [",", "s"], "command": "toggle_status_bar"
 	},
 	{
+	 	"keys": [",", "g"], "command": "toggle_minimap"
+	},
+	{
 		"keys": [",", "l"], "command": "toggle_setting", "args": {"setting": "line_numbers"} 
 	},
 	{ 
