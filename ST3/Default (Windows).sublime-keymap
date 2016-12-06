@@ -136,7 +136,7 @@
 		"keys": [":", "w"], "command": "save" 
 	},
 	{
-		"keys": ["ctrl+h"], "command": "recent_active_files"
+		"keys": ["ctrl+e"], "command": "recent_active_files"
 	},
 	{
 	 	"keys": [",", "m"], "command": "toggle_menu"
@@ -149,7 +149,17 @@
 	},
 	{
 		"keys": [",", "l"], "command": "toggle_setting", "args": {"setting": "line_numbers"} 
+	},
+		{ 
+		"keys": ["ctrl+k"], "command": "travel_to_pane", "args": {"direction": "up"}, "caption": "Origami: Focus on Pane Above" 
+	},
+	{ 
+		"keys": ["ctrl+l"], "command": "travel_to_pane", "args": {"direction": "right"}, "caption": "Origami: Focus on Pane on the Right" 
+	},
+	{ 
+		"keys": ["ctrl+j"], "command": "travel_to_pane", "args": {"direction": "down"}, "caption": "Origami: Focus on Pane Below" 
+	},
+	{ 
+		"keys": ["ctrl+h"], "command": "travel_to_pane", "args": {"direction": "left"}, "caption": "Origami: Focus on Pane on the Left" 
 	}
-
-
 ]
