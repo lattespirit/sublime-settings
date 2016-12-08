@@ -154,6 +154,22 @@
 	{
 		"keys": [",", "l"], "command": "toggle_setting", "args": {"setting": "line_numbers"} 
 	},
+	{
+	    "keys": [",", "s", "p"], "command": "set_setting",
+	    "args":
+	    {
+	        "setting": "draw_white_space",
+	        "value": "all"
+	    }
+	},
+	{
+	    "keys": [",", "i", "s", "p"], "command": "set_setting",
+	    "args":
+	    {
+	        "setting": "draw_white_space",
+	        "value": "selection"
+	    }
+	},
 	{ 
 		"keys": ["ctrl+k", "ctrl+k"], "command": "travel_to_pane", "args": {"direction": "up"}, "caption": "Origami: Focus on Pane Above" 
 	},
