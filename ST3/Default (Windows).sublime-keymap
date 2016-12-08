@@ -155,16 +155,16 @@
 		"keys": [",", "l"], "command": "toggle_setting", "args": {"setting": "line_numbers"} 
 	},
 	{ 
-		"keys": ["ctrl+k"], "command": "travel_to_pane", "args": {"direction": "up"}, "caption": "Origami: Focus on Pane Above" 
+		"keys": ["ctrl+k", "ctrl+k"], "command": "travel_to_pane", "args": {"direction": "up"}, "caption": "Origami: Focus on Pane Above" 
 	},
 	{ 
-		"keys": ["ctrl+l"], "command": "travel_to_pane", "args": {"direction": "right"}, "caption": "Origami: Focus on Pane on the Right" 
+		"keys": ["ctrl+l", "ctrl+l"], "command": "travel_to_pane", "args": {"direction": "right"}, "caption": "Origami: Focus on Pane on the Right" 
 	},
 	{ 
-		"keys": ["ctrl+j"], "command": "travel_to_pane", "args": {"direction": "down"}, "caption": "Origami: Focus on Pane Below" 
+		"keys": ["ctrl+j", "ctrl+j"], "command": "travel_to_pane", "args": {"direction": "down"}, "caption": "Origami: Focus on Pane Below" 
 	},
 	{ 
-		"keys": ["ctrl+h"], "command": "travel_to_pane", "args": {"direction": "left"}, "caption": "Origami: Focus on Pane on the Left" 
+		"keys": ["ctrl+h", "ctrl+h"], "command": "travel_to_pane", "args": {"direction": "left"}, "caption": "Origami: Focus on Pane on the Left" 
 	},
 	{ 
 		"keys": ["g", "t"], "command": "next_view" 
