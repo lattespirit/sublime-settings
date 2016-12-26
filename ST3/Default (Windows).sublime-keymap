@@ -152,6 +152,9 @@
 	 	"keys": [",", "g"], "command": "toggle_minimap"
 	},
 	{
+      		"keys": [",", "b"], "command": "toggle_side_bar"
+	},
+	{
 		"keys": [",", "l"], "command": "toggle_setting", "args": {"setting": "line_numbers"} 
 	},
 	{
