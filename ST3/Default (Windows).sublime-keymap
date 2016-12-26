@@ -190,5 +190,8 @@
 	},
 	{
 		"keys": [",", "r"], "command": "reveal_in_side_bar"
+	},
+	{
+		"keys": ["ctrl+shift+r"], "command": "goto_symbol_in_project" 
 	}
 ]
