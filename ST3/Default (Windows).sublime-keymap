@@ -1,12 +1,7 @@
 [
-	{ 
-		"keys": ["ctrl+alt+d"], "command": "alignment" 
-	},
-	{ 
-		"keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"
-	},
-	{ 
-		"keys": ["j","j"], "command": "exit_insert_mode",
+	{ "keys": ["ctrl+alt+d"], "command": "alignment" },
+	{ "keys": ["ctrl+alt+n"], "command": "advanced_new_file_new"},
+	{ "keys": ["j","j"], "command": "exit_insert_mode",
 	        "context":
 	        [
 	            { "key": "setting.command_mode", "operand": false },
@@ -77,10 +72,14 @@
 	  	"keys": ["alt+y"], "command": "scroll_lines", "args": {"amount": -1.0 }
 	},
 	{ 
-		"keys": ["f12"], "command": "side_bar_open_in_browser", "args": {"paths":[], "type":"testing", "browser":""}
+		"keys": ["f12"],
+	    "command": "side_bar_open_in_browser" ,
+	    "args":{"paths":[], "type":"testing", "browser":""}
 	},
 	{ 
-		"keys": ["alt+f12"], "command": "side_bar_open_in_browser", "args":{"paths":[], "type":"production", "browser":""}
+		"keys": ["alt+f12"],
+	    "command": "side_bar_open_in_browser",
+	    "args":{"paths":[], "type":"production", "browser":""}
 	},
 	{ 
 		"keys": ["f6"], "command": "expand_fqcn"
@@ -124,20 +123,24 @@
 	{
 		"keys": ["f8"], "command": "insert_php_constructor_property" 
 	},
+
 	{
-		"keys": [":", "q"], "command": "close" 
+	 	"keys": [":", "q"], "command": "close" 
 	},
 	{
-		"keys": [",", "q"], "command": "close" 
+	 	"keys": [",", "q"], "command": "close" 
 	},
 	{
-		"keys": [",", "w"], "command": "save" 
+	 	"keys": [",", "w"], "command": "save" 
 	},
 	{
-		"keys": [":", "w"], "command": "save" 
+	 	"keys": [":", "w"], "command": "save" 
 	},
 	{
-		"keys": ["ctrl+e"], "command": "recent_active_files"
+	 	"keys": ["ctrl+e"], "command": "recent_active_files"
+	},
+	{
+	 	"keys": [",", "e"], "command": "recent_active_files"
 	},
 	{
 	 	"keys": [",", "m"], "command": "toggle_menu"
@@ -146,19 +149,20 @@
 	 	"keys": [",", "t"], "command": "toggle_tabs"
 	},
 	{
-	 	"keys": [",", "s"], "command": "toggle_status_bar"
-	},
-	{
-	 	"keys": [",", "g"], "command": "toggle_minimap"
-	},
-	{
-      		"keys": [",", "b"], "command": "toggle_side_bar"
+	 	"keys": [",", "s", "t"], "command": "toggle_status_bar"
 	},
 	{
 		"keys": [",", "l"], "command": "toggle_setting", "args": {"setting": "line_numbers"} 
 	},
 	{
-	    "keys": [",", "s", "p"], "command": "set_setting",
+	 	"keys": [",", "g"], "command": "toggle_minimap"
+	},
+	{
+	 	"keys": [",", "b"], "command": "toggle_side_bar"
+	},
+	{
+	    "keys": [",", "s", "p"],
+	    "command": "set_setting",
 	    "args":
 	    {
 	        "setting": "draw_white_space",
@@ -166,7 +170,8 @@
 	    }
 	},
 	{
-	    "keys": [",", "i", "s", "p"], "command": "set_setting",
+	    "keys": [",", "i", "s", "p"],
+	    "command": "set_setting",
 	    "args":
 	    {
 	        "setting": "draw_white_space",
@@ -196,5 +201,23 @@
 	},
 	{
 		"keys": ["ctrl+shift+r"], "command": "goto_symbol_in_project" 
+	},
+	{
+		"keys": [",", "f"], "command": "goto_symbol_in_project" 
+	},
+	{ 
+		"keys": [",", "p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} 
+	},
+	{ 
+		"keys": ["ctrl+shift+h"], "command": "carry_file_to_pane", "args": {"direction": "left"} 
+	},
+	{ 
+		"keys": ["ctrl+shift+l"], "command": "carry_file_to_pane", "args": {"direction": "right"} 
+	},
+	{ 
+		"keys": ["ctrl+shift+j"], "command": "carry_file_to_pane", "args": {"direction": "down"} 
+	},
+	{ 
+		"keys": ["ctrl+shift+k"], "command": "carry_file_to_pane", "args": {"direction": "up"} 
 	}
 ]
