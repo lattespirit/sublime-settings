@@ -191,10 +191,18 @@
 		"keys": ["ctrl+h", "ctrl+h"], "command": "travel_to_pane", "args": {"direction": "left"}, "caption": "Origami: Focus on Pane on the Left" 
 	},
 	{ 
-		"keys": ["v", "s", "p"], "command": "clone_file_to_pane", "args": {"direction": "right"} 
+		"keys": ["v", "s", "p"], "command": "clone_file_to_pane", "args": {"direction": "right"},
+        	"context":
+      		[
+       			{ "key": "setting.command_mode", "operand": true }
+    		]
 	},
 	{ 
-		"keys": ["s", "p"], "command": "clone_file_to_pane", "args": {"direction": "down"} 
+		"keys": ["s", "p"], "command": "clone_file_to_pane", "args": {"direction": "down"},
+       		"context":
+        	[
+            		{ "key": "setting.command_mode", "operand": true }
+        	]
 	},
 	{ 
 		"keys": ["g", "t"], "command": "next_view" 
