@@ -245,5 +245,12 @@
 	},
 	{ 
 		"keys": ["alt+3"], "command": "show_panel", "args": {"panel": "console", "toggle": true} 
+	},
+	{
+		"keys": ["backspace"], "command": "toggle_comment", "args": { "block": false },
+		"context":
+		[
+			{"key": "setting.command_mode", "operand": true},
+		]
 	}
 ]
