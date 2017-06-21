@@ -252,5 +252,12 @@
 		[
 			{"key": "setting.command_mode", "operand": true},
 		]
+	},
+	{
+		"keys": [" "], "command": "expand_selection", "args": {"to": "scope"},
+		"context":
+		[
+			{"key": "setting.command_mode", "operand": true}
+		]
 	}
 ]
