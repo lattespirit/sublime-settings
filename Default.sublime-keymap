@@ -271,5 +271,40 @@
 		[
 			{"key": "setting.command_mode", "operand": true}
 		]
+	},
+		{
+		"keys": ["q"], "command": "close",
+		"context":
+		[
+			{"key": "setting.command_mode", "operand": true}
+		]
+	},
+	{
+		"keys": ["r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"},
+		"context":
+		[
+			{"key": "setting.command_mode", "operand": true}
+		]
+	},
+	{
+		"keys": ["R"], "command": "goto_symbol_in_project",
+		"context":
+		[
+			{"key": "setting.command_mode", "operand": true}
+		]
+	},
+	{
+		"keys": ["N"], "command": "next_view_in_stack",
+		"context":
+		[
+			{"key": "setting.command_mode", "operand": true}
+		]
+	},
+	{
+		"keys": ["P"], "command": "prev_view_in_stack",
+		"context":
+		[
+			{"key": "setting.command_mode", "operand": true}
+		]
 	}
 ]
