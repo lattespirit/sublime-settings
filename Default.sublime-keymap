@@ -301,5 +301,13 @@
 		[
 			{"key": "setting.command_mode", "operand": true}
 		]
+	},
+	{
+		"keys": ["s", "<character>"], "command": "easy_motion",
+		"args": {"select_text": false, "character": "enter"},
+		"context":
+		[
+			{"key": "setting.command_mode", "operand": true}
+		]
 	}
 ]
