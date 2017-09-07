@@ -308,6 +308,7 @@
 		"context":
 		[
 			{"key": "setting.command_mode", "operand": true}
+			{"key": "selection_empty", "operator": "equal", "operand": true, "match_all": false}
 		]
 	}
 ]
