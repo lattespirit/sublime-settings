@@ -310,5 +310,12 @@
 			{"key": "setting.command_mode", "operand": true}
 			{"key": "selection_empty", "operator": "equal", "operand": true, "match_all": false}
 		]
+	},
+	{
+		"keys": ["X"], "command": "reopen_last_file",
+		"context":
+		[
+			{"key": "setting.command_mode", "operand": true}
+		]
 	}
 ]
