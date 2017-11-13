@@ -221,21 +221,35 @@
 		"keys": ["ctrl+shift+k"], "command": "carry_file_to_pane", "args": {"direction": "up"} 
 	},
 	{
-		"keys": ["1", "1"], "command": "zoom_pane", "args": {"fraction": 0.25},
+		"keys": ["1", "1"], "command": "zoom_pane", "args": {"fraction": 0.10},
 		"context":
 		[
 			{"key": "setting.command_mode", "operand": true}
 		]
 	},
 	{
-		"keys": ["2", "2"], "command": "zoom_pane", "args": {"fraction": 0.5},
+		"keys": ["2", "2"], "command": "zoom_pane", "args": {"fraction": 0.25},
 		"context":
 		[
 			{"key": "setting.command_mode", "operand": true}
 		]
 	},
 	{
-		"keys": ["3", "3"], "command": "zoom_pane", "args": {"fraction": 0.75},
+		"keys": ["3", "3"], "command": "zoom_pane", "args": {"fraction": 0.50},
+		"context":
+		[
+			{"key": "setting.command_mode", "operand": true}
+		]
+	},
+	{
+		"keys": ["4", "4"], "command": "zoom_pane", "args": {"fraction": 0.75},
+		"context":
+		[
+			{"key": "setting.command_mode", "operand": true}
+		]
+	},
+	{
+		"keys": ["5", "5"], "command": "zoom_pane", "args": {"fraction": 0.90},
 		"context":
 		[
 			{"key": "setting.command_mode", "operand": true}
@@ -317,5 +331,8 @@
 		[
 			{"key": "setting.command_mode", "operand": true}
 		]
+	},
+	{
+		"keys": ["ctrl+shift+s"], "command": "run_macro_file", "args": {"file": "res://Packages/User/snake_case_method_name.sublime-macro"}
 	}
 ]
