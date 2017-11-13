@@ -303,7 +303,7 @@
 		]
 	},
 	{
-		"keys": ["N"], "command": "next_view_in_stack",
+		"keys": ["P"], "command": "next_view_in_stack",
 		"context":
 		[
 			{"key": "setting.command_mode", "operand": true}
@@ -317,16 +317,14 @@
 		]
 	},
 	{
-		"keys": ["s", "<character>"], "command": "easy_motion",
-		"args": {"select_text": false, "character": "enter"},
+		"keys": ["X"], "command": "reopen_last_file",
 		"context":
 		[
 			{"key": "setting.command_mode", "operand": true}
-			{"key": "selection_empty", "operator": "equal", "operand": true, "match_all": false}
 		]
 	},
 	{
-		"keys": ["X"], "command": "reopen_last_file",
+		"keys": ["N"], "command": "auto_complete",
 		"context":
 		[
 			{"key": "setting.command_mode", "operand": true}
