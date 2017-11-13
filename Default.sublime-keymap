@@ -331,6 +331,13 @@
 		]
 	},
 	{
-		"keys": ["ctrl+shift+s"], "command": "run_macro_file", "args": {"file": "res://Packages/User/snake_case_method_name.sublime-macro"}
+		"keys": ["ctrl+shift+s"], "command": "run_macro_file",
+		"args": {"file": "res://Packages/User/snake_case_method_name.sublime-macro"}
+	},
+		{
+		"keys": ["ctrl+shift+t"], "command": "phpunit_test_suite"
+	},
+	{
+		"keys": ["ctrl+shift+alt+t"], "command": "phpunit_test_file"
 	}
 ]
