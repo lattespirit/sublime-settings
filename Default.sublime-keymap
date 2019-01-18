@@ -150,6 +150,9 @@
 	 	"keys": [",", "g"], "command": "goto_definition_scope"
 	},
 	{
+	 	"keys": [",", "G"], "command": "jump_back"
+	},
+	{
 	    "keys": [",", "s", "p"],
 	    "command": "set_setting",
 	    "args":
